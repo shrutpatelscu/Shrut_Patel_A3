@@ -22,6 +22,7 @@ public class RoomCreation {
         castle = new Room("castle", "You are at the castle", false);
         kitchen = new Room("kitchen", "The kitchen door has a shape of a heart", false);
         frontGate = new Room("frontGate", "There is a giant ogre", true);
+        // adding new room
         room1= new Room("room1","For testing only", false);
         
         
@@ -29,6 +30,7 @@ public class RoomCreation {
         castle.setExit("east", kitchen);
         castle.setExit("south", frontGate);
         frontGate.setExit("north", castle);
+        // adding new room 
         castle.setExit("north", room1);
         room1.setExit("south", castle);
 
