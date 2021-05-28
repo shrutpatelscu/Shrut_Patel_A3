@@ -3,8 +3,8 @@ package ass3.mygame2;
 /**
  * 
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Shrut Patel
+ * @version (29-05-2021)
  */
 public class Item
 {
@@ -12,7 +12,7 @@ public class Item
     private String name;
     private int destructivePower;
     private double healingPower;
-   // A demo item is to be created. It will be accessibile privately
+   
     private String DemoItem;
     
     public Item(String name, String description, int destructivePower)
@@ -29,7 +29,7 @@ public class Item
         this.healingPower = healingPower;
     }
     
-    // Comment for Method for DemoItem
+    //  DemoItem
     //public Item(String name, String description, String DemoItem)
     //{
      // this.name = name;
