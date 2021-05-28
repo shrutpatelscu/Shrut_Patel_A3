@@ -38,7 +38,7 @@ public class Game {
         player = new Player();
         rooms = new RoomCreation();
         currentRoom = rooms.getRoom("castle");  // start game outside
-        //System.out.println(createRoom.getcurrentRoom().getName());
+       
     }
     
     public Room getCurrentRoom() {
@@ -52,8 +52,7 @@ public class Game {
     public void play() {
         printWelcome();
 
-        // Enter the main command loop.  Here we repeatedly read commands and
-        // execute them until the game is over.
+     // while condition;
         boolean finished = false;
         while (!finished) {
             long currentTime = System.currentTimeMillis();
@@ -79,7 +78,7 @@ public class Game {
     /**
      * Given a command, process (that is: execute) the command.
      *
-     * @param command The command to be processed.
+     * @param command 
      * @return true If the command ends the game, false otherwise.
      */
     public boolean processCommand(Command command) {
@@ -94,7 +93,7 @@ public class Game {
         if (commandWord.equals("help")) {
             printHelp();
         } else if (commandWord.equals("inventory")) {
-            printInventory(); // printVeggies
+            printInventory(); 
         } else if (commandWord.equals("go")) {
             goRoom(command);
         } else if (commandWord.equals("take")) {
@@ -102,9 +101,9 @@ public class Game {
         } else if (commandWord.equals("drop")) {
             dropItem(command);
         } else if (commandWord.equals("use")) {
-            //useItem(command);
+            useItem(command);
         } else if (commandWord.equals("inspect")) {
-            //lookItem(command);
+           // inspectItem(command);
         }
         // DEMO 
         else if  (commandWord.equals("Demo")){
@@ -145,7 +144,7 @@ public class Game {
      */
     private void goRoom(Command command) {
         if (!command.hasSecondWord()) {
-            // if there is no second word, we don't know where to go...
+          
             System.out.println("Go where?");
             return;
         }
@@ -158,7 +157,7 @@ public class Game {
         if (nextRoom == null) {
             System.out.println("There is no door!");
         } else {
-            if (currentRoom.getLockedStatus() == true) { // the door is locked
+            if (currentRoom.getLockedStatus() == true) { 
                 System.out.println("The door is locked, you need to find a way to open it");
                 System.out.println(currentRoom.getLongDescription());
             } else {
@@ -172,7 +171,7 @@ public class Game {
 
     private void takeItem(Command command) {
         if (!command.hasSecondWord()) {
-            // if there is no second word, we don't know where to go...
+           
             System.out.println("Take what?");
             return;
         }
@@ -188,9 +187,7 @@ public class Game {
             currentRoom.removeItemInRoom(currentItem);
             player.addItemInventory(currentItem);
 
-            //roomItem.remove(currentItem);
-            //addItemInventory(currentItem);
-            //System.out.println(currentRoom.getLongDescription());
+           
         }
     }
 
@@ -221,7 +218,7 @@ public class Game {
     private void useItem(Command command) // use key
     {
         if (!command.hasSecondWord()) {
-            // if there is no second word, we don't know where to go...
+           
             System.out.println("Take what?");
             return;
         }
@@ -232,12 +229,7 @@ public class Game {
         if (currentItem == null) {
             System.out.println("You can't use nothing, no?");
         } else {
-            // you want make sure that the currentRoom is the room where you want to open the door (before the nextdoor).
-            // you want to make sure the currentItem matches the key to open the next door.
-
-            //if(currentRoom.getName().equals("castle") && currentItem.getName().equals("key")){
-            //.setLockedStatus(false);
-            System.out.println("You just used the " + currentItem.getName());
+                        System.out.println("You just used the " + currentItem.getName());
 
             //if(currentRoom.getName().equals("frontYard") && currentItem.getName().equals("item1")){
             //frontGate.setLockedStatus(false);
