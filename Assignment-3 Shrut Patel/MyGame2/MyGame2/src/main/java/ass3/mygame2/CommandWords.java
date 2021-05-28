@@ -1,11 +1,10 @@
 /**
- * This class is part of the "World of Zuul" application. 
- * "World of Zuul" is a very simple, text based adventure game.
+ * zull game
  * 
- * This class holds an enumeration of all command words known to the game.
- * It is used to recognise commands as they are typed in.
+ * Command words used in the game- Zull game.
+ * I
  *
- * @author  Michael Kölling and David J. Barnes
+ * @author  Shrut Patel
  * @version 2016.02.29
  */
 package ass3.mygame2;
@@ -18,7 +17,7 @@ public class CommandWords
     };
 
     /**
-     * Constructor - initialise the command words.
+     * initialise the command words.
      */
     public CommandWords()
     {
@@ -35,7 +34,7 @@ public class CommandWords
             if(validCommands[i].equals(aString))
                 return true;
         }
-        // if we get here, the string was not found in the commands
+      
         return false;
     }
 
