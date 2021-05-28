@@ -7,8 +7,8 @@ import java.util.ArrayList;
 /**
  * Write a description of class Player here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Shrut Patel
+ * @version 29-05-2021
  */
 public class Player
 {
@@ -23,16 +23,16 @@ public class Player
     /**
     * Write a description of class Player here.
     *
-    * @param (your name)
-    * @return (a version number or a date)
-    * @exception (a version number or a date)
-    * @see (a version number or a date)
+    * @param (Shrut Patel)
+    * @return (29-05-2021)
+    * @exception (29-05-2021)
+    * @see (29-05-2021)
     */
     
     public void addItemInventory(Item item){
         playerItem.add(item);
         System.out.println(item.getDescription() + " was taken ");
-        //System.out.println(item.getDescription() + " was removed from the room"); // add extra information to inform user that the item has been taken
+        
     }
 
     public void removeItemInventory(Item item){
