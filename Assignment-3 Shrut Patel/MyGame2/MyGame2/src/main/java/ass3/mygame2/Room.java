@@ -6,8 +6,12 @@ import java.util.ArrayList;
 
 /**
  * Write at least 3 sentences!!!!!
+ * This is the room class
+ * Demo room can be added to it
+ * Access modifiers which are private are passed which are accessed by the specific class only
+ * Various strings are passed
  * 
- * @author  Michael Kölling and David J. Barnes
+ * @author Shrut Patel
  * @version 2016.02.29
  */
 
@@ -59,9 +63,7 @@ public class Room
     }
 
     /**
-     * Return a description of the room in the form:
-     *     You are in the kitchen.
-     *     Exits: north west
+     * 
      * @return A long description of this room
      */
     public String getLongDescription()
@@ -85,8 +87,7 @@ public class Room
     }
 
     /**
-     * Return a string describing the room's exits, for example
-     * "Exits: north west".
+     * 
      * @return Details of the room's exits.
      */
     private String getExitString()
