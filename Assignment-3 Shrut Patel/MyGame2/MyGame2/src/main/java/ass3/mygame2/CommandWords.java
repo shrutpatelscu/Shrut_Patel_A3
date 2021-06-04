@@ -2,7 +2,7 @@
  * zull game
  * 
  * Command words used in the game- Zull game.
- * I
+ * 
  *
  * @author  Shrut Patel
  * @version 2016.02.29

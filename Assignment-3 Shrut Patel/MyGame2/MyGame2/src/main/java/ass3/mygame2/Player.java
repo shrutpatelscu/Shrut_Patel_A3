@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 
 /**
- * Write a description of class Player here.
+ * Player class is used to Add and remove items from the inventory
  *
  * @author Shrut Patel
  * @version 29-05-2021
@@ -21,9 +21,9 @@ public class Player
     }
     
     /**
-    * Write a description of class Player here.
+    * Remove items from the inventory and add items to the inventory.
     *
-    * @param (Shrut Patel)
+    * @param ()
     * @return (29-05-2021)
     * @exception (29-05-2021)
     * @see (29-05-2021)
