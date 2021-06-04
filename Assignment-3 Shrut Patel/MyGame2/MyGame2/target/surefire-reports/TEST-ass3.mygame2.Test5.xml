@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="8" failures="0" name="ass3.mygame2.Test5" time="0.005" errors="0" skipped="0">
+<testsuite tests="8" failures="0" name="ass3.mygame2.Test5" time="0.008" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="16.0.1+9-24"/>
@@ -60,12 +60,12 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="ass3.mygame2.Test5" name="ass3.mygame2.Test5.testgetAllitems" time="0.003"/>
+  <testcase classname="ass3.mygame2.Test5" name="ass3.mygame2.Test5.testgetAllitems" time="0.007"/>
+  <testcase classname="ass3.mygame2.Test5" name="ass3.mygame2.Test5.testgetName" time="0.001"/>
+  <testcase classname="ass3.mygame2.Test5" name="ass3.mygame2.Test5.testgetRoomItem" time="0"/>
   <testcase classname="ass3.mygame2.Test5" name="ass3.mygame2.Test5.testgetExit" time="0"/>
-  <testcase classname="ass3.mygame2.Test5" name="ass3.mygame2.Test5.testgetName" time="0"/>
   <testcase classname="ass3.mygame2.Test5" name="ass3.mygame2.Test5.testgetExitString" time="0"/>
-  <testcase classname="ass3.mygame2.Test5" name="ass3.mygame2.Test5.testgetRoomItem" time="0.001"/>
   <testcase classname="ass3.mygame2.Test5" name="ass3.mygame2.Test5.testgetLongDescription" time="0"/>
+  <testcase classname="ass3.mygame2.Test5" name="ass3.mygame2.Test5.testgetShortDescription" time="0"/>
   <testcase classname="ass3.mygame2.Test5" name="ass3.mygame2.Test5.testgetLockedStatus" time="0"/>
-  <testcase classname="ass3.mygame2.Test5" name="ass3.mygame2.Test5.testgetShortDescription" time="0.001"/>
 </testsuite>
