@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.ArrayList;
 
 /**
- * Write at least 3 sentences!!!!!
  * This is the room class
  * Demo room can be added to it
  * Access modifiers which are private are passed which are accessed by the specific class only
@@ -17,6 +16,7 @@ import java.util.ArrayList;
 
 public class Room 
 {
+    // Used to initialize the details such as name and description
     private String description;
     private String name;
     private boolean isLocked;
