@@ -21,6 +21,7 @@ public class ItemCreation
         allItemsInGame = new ArrayList();
         createItems();
     }
+    // Method to create Items that is DemoItem
     
     public void createItems(){
         
@@ -47,6 +48,8 @@ public class ItemCreation
                 itemToReturn = item;
             }
         }
+        
+       // Returning Return type
         return itemToReturn;
     }
   
