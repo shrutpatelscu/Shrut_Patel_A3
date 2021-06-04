@@ -16,7 +16,7 @@ import java.util.HashMap;
  */
 
 public class Game {
-
+//initialize parsers, players, room and roomcreation
     private Parser parser;
     private Player player;
     private Room currentRoom;
@@ -42,6 +42,7 @@ public class Game {
     }
     
     public Room getCurrentRoom() {
+        // Given the return value
         return currentRoom;
     }
 
@@ -133,6 +134,7 @@ public class Game {
         System.out.println("Your command words are:");
         parser.showCommands();
     }
+    // Method used to print Inventory
 
     private void printInventory() {
         System.out.println(player.printAllInventory());
@@ -168,6 +170,7 @@ public class Game {
             }
         }
     }
+    // Method used to take the item 
 
     private void takeItem(Command command) {
         if (!command.hasSecondWord()) {
@@ -191,6 +194,7 @@ public class Game {
         }
     }
 
+    // Methods used to drop item
     private void dropItem(Command command) {
         if (!command.hasSecondWord()) {
             // if there is no second word, we don't know where to go...
@@ -215,6 +219,7 @@ public class Game {
         }
     }
 
+    // Method used to use item
     private void useItem(Command command) // use key
     {
         if (!command.hasSecondWord()) {

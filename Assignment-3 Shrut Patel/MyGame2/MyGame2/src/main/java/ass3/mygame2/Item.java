@@ -8,6 +8,7 @@ package ass3.mygame2;
  */
 public class Item
 {
+    // Initialised the details such as power, names and description.
     private String description;
     private String name;
     private int destructivePower;
