@@ -15,6 +15,7 @@ public class MyGame {
     *
     * @param nothing
     */
+    // This is the main Method
     public static void main(String[] args) {
         Game game = new Game();
         game.play(); 
