@@ -4,10 +4,9 @@ import java.util.ArrayList;
 
 
 /**
- * Write a description of class ItemCreation here.
+ * This class is used to create items used in the game.
  * an item is added in this class.
- * this class is used to create items used in the game.
- *
+ * 
  * @author Shrut Patel
  * @version 29-05-2021
  */
